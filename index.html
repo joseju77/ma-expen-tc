@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expendedora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="row m-3">
+        <div class="col-3 shadow p-3 rounded text-center bg-primary bg-gradient bg-opacity-25 mt-2">
+            <h3>Máquina Expendedora</h3>
+            <div class="row justify-content-center">
+                <button type="button" class="btn btn-light col-auto me-2" id="credito">Crédito</button>
+                <button type="button" class="btn btn-light col-auto" id="papas">Papas</button>
+                <button type="button" class="btn btn-light col-auto" id="inicio" hidden>Inicio</button>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="row p-2">
+                <h3 id="estadoActual">Estado Actual: 0 Inicial</h3>
+                <table class="table text-center table-bordered table-striped-columns m-0">
+                    <thead class="thead-dark rounded">
+                        <tr id="estado" class="fs-5">
+                            <th>0</th>
+                        </tr>
+                    </thead>
+                    <tbody id="body" class="font-weight-bold">
+                        <tr id="transicion">
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center mt-4" id="seccionCredito" hidden>
+            <div class="col-auto border shadow rounded p-3 text-center">
+                <h1 class="mb-3" id="titulo">Ingresar Creditos (Actual - 0)</h1>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="img/coin-slot.png" height="200">
+                    </div>
+                    <div class="col-2" draggable="true" value="1">
+                        <img src="img/coin1.png" height="100">
+                    </div>
+                    <div class="col-2" draggable="true" value="2">
+                        <img src="img/coin2.png" height="100">
+                    </div>
+                    <div class="col-2" draggable="true" value="5">
+                        <img src="img/coin5.png" height="100">
+                    </div>
+                    <div class="col-2" draggable="true" value="10">
+                        <img src="img/coin10.png" height="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4" id="seccionPapas" hidden>
+            <div class="col-10 rounded" style="background-color: rgb(255 72 72);">
+                <div class="row p-2 py-3">
+                    <div class="col-8">
+                        <div class="rounded border border-2 p-5" style="background-color: rgb(65 94 109);">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="p-2 item rounded text-center">
+                                        <img src="img/sabritas.png" class="mx-auto" height="130" id="sabritas">
+                                    </div>
+                                    <div class="mt-2 item rounded text-center fw-bold">
+                                        (26) - $15
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="p-2 item rounded text-center">
+                                        <img src="img/doritos.png" class="mx-auto" height="130" id="doritos">
+                                    </div>
+                                    <div class="mt-2 item rounded text-center fw-bold">
+                                        (33) - $17
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="p-2 item rounded text-center">
+                                        <img src="img/churrumais.png" class="mx-auto" height="130" id="churrumais">
+                                    </div>
+                                    <div class="mt-2 item rounded text-center fw-bold">
+                                        (02) - $20
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <div class="col-4">
+                                    <div class="p-2 item rounded text-center">
+                                        <img src="img/cheetos-poffs.png" class="mx-auto" height="130" id="cheetos-poffs">
+                                    </div>
+                                    <div class="mt-2 item rounded text-center fw-bold">
+                                        (09) - $11
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="p-2 item rounded text-center">
+                                        <img src="img/cheetos-torciditos.png" class="mx-auto" height="130" id="cheetos-torciditos">
+                                    </div>
+                                    <div class="mt-2 item rounded text-center fw-bold">
+                                        (89) - $9
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="p-2 item rounded text-center">
+                                        <img src="img/fritos.png" class="mx-auto" height="130" id="fritos">
+                                    </div>
+                                    <div class="mt-2 item rounded text-center fw-bold">
+                                        (65) - $18
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="p-2 item rounded text-center">
+                                        <img src="img/rancheritos.png" class="mx-auto" height="130" id="rancheritos">
+                                    </div>
+                                    <div class="mt-2 item rounded text-center fw-bold">
+                                        (11) - $13
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="p-2 item rounded text-center">
+                                        <img src="img/ruffles.png" class="mx-auto" height="130" id="ruffles">
+                                    </div>
+                                    <div class="mt-2 item rounded text-center fw-bold">
+                                        (03) - $7
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="p-2 item rounded text-center">
+                                        <img src="img/sabritones.png" class="mx-auto" height="130" id="sabritones">
+                                    </div>
+                                    <div class="mt-2 item rounded text-center fw-bold">
+                                        (52) - $14
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 text-center">
+                        <div class="row mb-2">
+                            <div type="text" class="form-control" id="creditosPapas" readonly>Creditos: 0</div>
+                        </div>
+                        <div class="row item p-2 rounded border border-2 mt-5">
+                            <div class="col-12 mb-2">
+                                <input type="text" class="form-control" id="seleccion" readonly>
+                                <div id="error" class="fw-bold text-danger" hidden>
+                                    Producto no encontrado.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <button class="col-4 btn btn-outline-secondary boton">1</button>
+                                    <button class="col-4 btn btn-outline-secondary boton">2</button>
+                                    <button class="col-4 btn btn-outline-secondary boton">3</button>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <button class="col-4 btn btn-outline-secondary boton">4</button>
+                                    <button class="col-4 btn btn-outline-secondary boton">5</button>
+                                    <button class="col-4 btn btn-outline-secondary boton">6</button>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <button class="col-4 btn btn-outline-secondary boton">7</button>
+                                    <button class="col-4 btn btn-outline-secondary boton">8</button>
+                                    <button class="col-4 btn btn-outline-secondary boton">9</button>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <button class="col-4 btn btn-outline-secondary" id="borrar" disabled>Borrar</button>
+                                    <button class="col-4 btn btn-outline-secondary boton">0</button>
+                                    <button class="col-4 btn btn-outline-secondary" id="enter" disabled>Enter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-1">
+                            <div class="col-12">
+                                <div class="rounded border border-2 mt-4" style="background-color: rgb(65 94 109); height: 300px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

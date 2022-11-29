@@ -1,0 +1,120 @@
+.item {
+    background-color: rgb(212 214 214);
+}
+
+.slide-sabritas {
+	animation: slide-sabritas 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-sabritas {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(750px, 350px) scale(2);
+    }
+}
+
+.slide-doritos {
+	animation: slide-doritos 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-doritos {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(540px, 350px) scale(2);
+    }
+}
+
+.slide-churrumais {
+	animation: slide-churrumais 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-churrumais {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(330px, 350px) scale(2);
+    }
+}
+
+.slide-cheetos-poffs {
+	animation: slide-cheetos-poffs 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-cheetos-poffs {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(750px, 160px) scale(2);
+    }
+}
+
+.slide-cheetos-torciditos {
+	animation: slide-cheetos-torciditos 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-cheetos-torciditos {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(540px, 160px) scale(2);
+    }
+}
+
+.slide-fritos {
+	animation: slide-fritos 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-fritos {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(330px, 160px) scale(2);
+    }
+}
+
+.slide-rancheritos {
+	animation: slide-rancheritos 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-rancheritos {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(750px, -30px) scale(2);
+    }
+}
+
+.slide-ruffles {
+	animation: slide-ruffles 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-ruffles {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(540px, -30px) scale(2);
+    }
+}
+
+.slide-sabritones {
+	animation: slide-sabritones 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-sabritones {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(330px, -30px) scale(2);
+    }
+}
