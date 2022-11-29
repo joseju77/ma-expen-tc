@@ -12,34 +12,34 @@
 </head>
 
 <body>
-    <div class="row m-3">
-        <div class="col-3 shadow p-3 rounded text-center bg-primary bg-gradient bg-opacity-25 mt-2">
-            <h3>Máquina Expendedora</h3>
-            <div class="row justify-content-center">
-                <button type="button" class="btn btn-light col-auto me-2" id="credito">Crédito</button>
-                <button type="button" class="btn btn-light col-auto" id="papas">Papas</button>
-                <button type="button" class="btn btn-light col-auto" id="inicio" hidden>Inicio</button>
-            </div>
-        </div>
-        <div class="col-9">
-            <div class="row p-2">
-                <h3 id="estadoActual">Estado Actual: 0 Inicial</h3>
-                <table class="table text-center table-bordered table-striped-columns m-0">
-                    <thead class="thead-dark rounded">
-                        <tr id="estado" class="fs-5">
-                            <th>0</th>
-                        </tr>
-                    </thead>
-                    <tbody id="body" class="font-weight-bold">
-                        <tr id="transicion">
-
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
     <div class="container">
+        <div class="row m-3">
+            <div class="col-3 shadow p-3 rounded text-center bg-primary bg-gradient bg-opacity-25 mt-2">
+                <h3>Máquina Expendedora</h3>
+                <div class="row justify-content-center">
+                    <button type="button" class="btn btn-light col-auto me-2" id="credito">Crédito</button>
+                    <button type="button" class="btn btn-light col-auto" id="papas">Papas</button>
+                    <button type="button" class="btn btn-light col-auto" id="inicio" hidden>Inicio</button>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="row p-2">
+                    <h3 id="estadoActual">Estado Actual: 0 Inicial</h3>
+                    <table class="table text-center table-bordered table-striped-columns m-0">
+                        <thead class="thead-dark rounded">
+                            <tr id="estado" class="fs-5">
+                                <th>0</th>
+                            </tr>
+                        </thead>
+                        <tbody id="body" class="font-weight-bold">
+                            <tr id="transicion">
+    
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
         <div class="row justify-content-center mt-4" id="seccionCredito" hidden>
             <div class="col-auto border shadow rounded p-3 text-center">
                 <h1 class="mb-3" id="titulo">Ingresar Creditos (Actual - 0)</h1>
